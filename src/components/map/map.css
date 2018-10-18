@@ -1,0 +1,13 @@
+.map {
+    width: 520px;
+    padding: 10px;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    display: flex;
+    line-height: 1.2;
+    text-align: left;
+}
+.mapboxgl-map {
+    display: flex;
+    border-radius: 10px;
+}
