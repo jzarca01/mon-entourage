@@ -1,7 +1,8 @@
 const config = {
-	mapboxToken:
-		'',
-	entourageApiKey: ''
+	mapboxToken: '',
+    entourageApiKey: '',
+    entourageLogin: '',
+    entouragePassword: ''
 }
 
 export default config

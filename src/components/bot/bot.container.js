@@ -3,8 +3,9 @@ import { createInstance , getFeeds } from '../../actions/entourage.actions'
 
 import Bot from './bot.component'
 
-function mapStateToProps() {
+function mapStateToProps(state) {
   return {
+    isLogged: state.entourage.isLogged
   }
 }
 

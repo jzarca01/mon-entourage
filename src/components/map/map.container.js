@@ -9,7 +9,7 @@ function mapStateToProps(state) {
     mapLoaded: state.map.isLoaded,
     mapState: state.map.viewport.toJS(),
     pois: state.entourage.filterType ? state.entourage.feeds.filter(feed => feed.data.entourage_type === state.entourage.filterType) : state.entourage.feeds,
-    token: state.entourage.token
+    isLogged: state.entourage.isLogged
   }
 }
 

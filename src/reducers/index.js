@@ -7,9 +7,9 @@ import enhanceMapReducer from 'redux-map-gl'
 const reducers = combineReducers({
     entourage: entourageReducer,
     map: enhanceMapReducer(mapReducer, {
-        latitude: 48.8618630253377,
-        longitude: 2.3691194,
-        zoom: 10
+        latitude: 48.87143494472935,
+        longitude: 2.357862651582299,
+        zoom: 11.5
       })
 })
 

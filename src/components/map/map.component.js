@@ -27,7 +27,7 @@ class Map extends React.Component {
 		)
 	}
 
-	_renderPopup(token) {
+	_renderPopup() {
 		const {popupInfo} = this.state;
 		return popupInfo && (
 		  <Popup tipSize={5}
@@ -45,19 +45,22 @@ class Map extends React.Component {
 			mapToken,
 			mapState,
 			onChangeViewport,
-			pois
+			pois,
+			isLogged,
 		} = this.props
 		return (
-			<MapGL
+			<div>
+			{isLogged && <MapGL
 				{...mapState}
 				showZoomControls={true}
 				width={520}
 				height={520}
 				mapboxApiAccessToken={mapToken}
 				onViewportChange={onChangeViewport}>
-				{pois.map(this._renderMarker)}
+				{pois && pois.map(this._renderMarker)}
 				{this._renderPopup()}
-			</MapGL>
+			</MapGL> }
+			</div>
 		)
 	}
 }

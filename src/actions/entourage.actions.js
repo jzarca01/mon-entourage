@@ -19,7 +19,7 @@ export function createInstance() {
 			return error
 		}
 		try {
-			await entourage.login('0677812319', '849229')
+			await entourage.login(config.entourageLogin, config.entouragePassword)
 			onSuccess()
 		} catch (err) {
 			onError(err)

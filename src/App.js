@@ -28,7 +28,7 @@ class App extends Component {
 						padding: '1rem'
 					}}>
 					Fait avec ❤ par 
-					<a href="https://twitter.com/Jeremie__" target="_blank">
+					<a href="https://twitter.com/Jeremie__" target="_blank" rel="noopener noreferrer">
 						 Jérémie Zarca
 					</a>
 				</StickyFooter>
