@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 
 import config from './config/config.js'
+
 import Map from './components/map/map.container'
 import Bot from './components/bot/bot.container'
-
 import StickyFooter from 'react-sticky-footer'
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
 						backgroundColor: '#fff',
 						padding: '1rem'
 					}}>
-					Fait avec ❤ par 
+					Fait avec ♥ par 
 					<a href="https://twitter.com/Jeremie__" target="_blank" rel="noopener noreferrer">
 						 Jérémie Zarca
 					</a>

@@ -1,7 +1,8 @@
 {
-  "name": "init",
+  "name": "mon-entourage",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Jérémie Zarca",
   "dependencies": {
     "@material-ui/core": "^3.2.2",
     "immutable": "^3.8.2",
@@ -32,5 +33,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "Une webapp non-officielle pour le réseau social Entourage https://www.entourage.social",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzarca01/mon-entourage.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jzarca01/mon-entourage/issues"
+  },
+  "homepage": "https://github.com/jzarca01/mon-entourage#readme"
 }

@@ -42,6 +42,8 @@ class Map extends React.Component {
 
 	render() {
 		const {
+			loadMap,
+			mapLoaded,
 			mapToken,
 			mapState,
 			onChangeViewport,
@@ -55,10 +57,11 @@ class Map extends React.Component {
 				showZoomControls={true}
 				width={520}
 				height={520}
+				onLoad={loadMap}
 				mapboxApiAccessToken={mapToken}
 				onViewportChange={onChangeViewport}>
-				{pois && pois.map(this._renderMarker)}
-				{this._renderPopup()}
+				{mapLoaded && pois.map(this._renderMarker)}
+				{mapLoaded && this._renderPopup()}
 			</MapGL> }
 			</div>
 		)
