@@ -1,13 +1,25 @@
 .App .container {
+  padding-top: 10vh;
   width:100%;
+  min-height: 80vh;
   text-align:center;
-  display: inline-flex;
-}
-
-.App .container > * {
-  margin: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 .App a {
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+ .App .container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column-reverse;
+ }
+
+ .App .container > * {
+    margin-bottom: 30px;
+  }
 }

@@ -27,10 +27,11 @@ class App extends Component {
 						backgroundColor: '#fff',
 						padding: '1rem'
 					}}>
-					Fait avec ♥ par 
+					<footer>Fait avec ♥ par 
 					<a href="https://twitter.com/Jeremie__" target="_blank" rel="noopener noreferrer">
 						 Jérémie Zarca
-					</a>
+					</a></footer>
+					
 				</StickyFooter>
 			</div>
 		)

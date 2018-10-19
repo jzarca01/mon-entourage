@@ -51,18 +51,21 @@ class Map extends React.Component {
 			isLogged,
 		} = this.props
 		return (
-			<div>
-			{isLogged && <MapGL
+			<div class="map-container">
+			{isLogged && 
+			<MapGL
 				{...mapState}
+				mapStyle="mapbox://styles/mapbox/light-v9"
 				showZoomControls={true}
 				width={520}
 				height={520}
 				onLoad={loadMap}
+				onError={(err) => console.log(err)}
 				mapboxApiAccessToken={mapToken}
 				onViewportChange={onChangeViewport}>
-				{mapLoaded && pois.map(this._renderMarker)}
-				{mapLoaded && this._renderPopup()}
-			</MapGL> }
+					{mapLoaded && pois.map(this._renderMarker)}
+					{mapLoaded && this._renderPopup()}
+			</MapGL>}
 			</div>
 		)
 	}

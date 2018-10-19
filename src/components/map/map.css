@@ -1,11 +1,12 @@
-.map {
-    width: 520px;
+.map-container {
     padding: 10px;
     border: 1px solid #fff;
     vertical-align: middle;
     display: flex;
     line-height: 1.2;
     text-align: left;
+    display: flex;
+    justify-content: space-evenly;
 }
 .mapboxgl-map {
     display: flex;
