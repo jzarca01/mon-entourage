@@ -8,7 +8,7 @@ function mapStateToProps(state) {
   return {
     mapLoaded: state.map.isLoaded,
     mapState: state.map.viewport.toJS(),
-    pois: state.entourage.filterType ? state.entourage.feeds.filter(feed => feed.data.entourage_type === state.entourage.filterType) : state.entourage.feeds,
+    pois: state.entourage.filterType ? state.entourage.feeds.filter(feed => feed.data.entourage_type === state.entourage.filterType && feed.data.status === 'open') : state.entourage.feeds.filter(feed => feed.data.status === 'open'),
     isLogged: state.entourage.isLogged
   }
 }
