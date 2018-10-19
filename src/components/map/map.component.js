@@ -51,7 +51,7 @@ class Map extends React.Component {
 			isLogged,
 		} = this.props
 		return (
-			<div class="map-container">
+			<div className="map-container">
 			{isLogged && 
 			<MapGL
 				{...mapState}
