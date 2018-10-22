@@ -43,9 +43,9 @@ export function getFeeds() {
 		try {
 			dispatch({ type: FETCH_FEEDS })
 			const feeds = await entourage.getFeeds({
-                latitude: 48.8760826,
-                longitude: 2.3691194
-            }, 1000)
+                latitude: 48.8574814,
+                longitude: 2.3324199
+            }, "50000")
 			onSuccess(feeds)
 		} catch (err) {
 			onError(err)
